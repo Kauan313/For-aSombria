@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Forças Sombrias</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: radial-gradient(circle, #0d0d0d, #1a1a1a);
+            font-family: 'Arial', sans-serif;
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* Cabeçalho */
+        header {
+            width: 100%;
+            padding: 20px 0;
+            background: linear-gradient(90deg, #0f0f0f, #1a1a1a, #0f0f0f);
+            box-shadow: 0 4px 20px rgba(33, 150, 243, 0.6);
+            border-bottom: 3px solid rgba(33, 150, 243, 0.8);
+        }
+
+        h1 {
+            font-size: 45px;
+            font-weight: bold;
+            color: #2196F3;
+            text-shadow: 0 0 20px rgba(33, 150, 243, 0.8);
+            text-transform: uppercase;
+            animation: neonGlow 2s infinite alternate;
+        }
+
+        @keyframes neonGlow {
+            0% { text-shadow: 0 0 20px rgba(33, 150, 243, 0.8); }
+            100% { text-shadow: 0 0 40px rgba(33, 150, 243, 1); }
+        }
+
+        /* Conteúdo */
+        .container {
+            margin: 80px auto;
+            width: 80%;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Botão de Voltar */
+        .button {
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(33, 150, 243, 0.6);
+            background-color: #1e88e5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sobre Nós</h1>
+    </header>
+
+    <div class="container">
+        <p>Bem-vindo à <strong>Forças Sombrias</strong>. Somos uma equipe de elite no Brookhaven RP, especializada em operações estratégicas e missões táticas.</p>
+        <p>Nosso objetivo é manter a ordem, agir com inteligência e ser a linha de frente quando o caos se instala.</p>
+        <p>Junte-se a nós e faça parte dessa força imparável!</p>
+        <br>
+        <button class="button" onclick="window.location.href='index.html';">Voltar</button>
+    </div>
+
+</body>
+</html>

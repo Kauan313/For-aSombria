@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Forças Sombrias</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #121212;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(33, 150, 243, 0.7);
+            width: 350px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2196F3;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            font-size: 16px;
+            color: #bbb;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #333;
+            color: #fff;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        button {
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1e88e5;
+            box-shadow: 0 5px 15px rgba(33, 150, 243, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <form action="index.html" method="get">
+        <div class="input-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="input-group">
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required>
+        </div>
+        <div class="input-group">
+            <label for="nick">Nick no Jogo:</label>
+            <input type="text" id="nick" name="nick" required>
+        </div>
+        <div class="input-group">
+            <label for="historia">Sua História:</label>
+            <input type="text" id="historia" name="historia" required>
+        </div>
+        <button type="submit">Cadastrar</button>
+    </form>
+  
+        </form>
+    </div>
+</body>
+</html>
+
